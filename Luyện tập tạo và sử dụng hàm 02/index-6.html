@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function isInteger(num){
+	if( Number.isInteger(num)){
+		if (num > 0) {
+    		return true;
+  		}else{
+  			return false;
+		}
+	}else{
+		return false;
+	}	
+}
+	
+var num = parseInt(prompt('Nhập vào',''));
+isInteger(num);
+console.log(isInteger(num));
+
+</script>
+
+</body>
+</html>

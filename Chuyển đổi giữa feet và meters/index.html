@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="input">
+<p id="kq"></p>
+
+
+<select id="From">
+  <option value="meters" id="meters">meters</option>
+  <option value="feet"  id="feet">feet</option>  
+</select>
+
+<select id="To">
+  <option value="feet" id="feet">feet</option>
+  <option value="meters" id="meters">meters</option>  
+</select>
+<button onclick="Convert()">Convert</button>
+
+<script type="text/javascript">
+	function Convert() {
+	var input=parseFloat(document.getElementById('input').value);	
+	var From = document.getElementById('From').value;
+	var To = document.getElementById('To').value;
+
+	if (From == "meters" && To == "feet" ) {
+		document.getElementById('kq').innerHTML = 0.305 * input;
+	}
+	if (From == "feet" && To == "meters") {
+		document.getElementById('kq').innerHTML = 3.279 * input ;
+	} 
+		
+}
+</script>
+
+</body>
+</html>

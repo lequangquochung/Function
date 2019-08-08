@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body onload="starCheck()">
+
+<script type="text/javascript">
+	var star = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+	var constellation = [" UrsaMinor","Tarurus","Cygnus","Lyra","Aquila"," Andromeda","Leo"];
+
+	function starCheck(str) {
+		var check = true;
+		str = prompt('Input','');
+		for (var i = 0; i <star.length ; i++) {
+			if (str==star[i]) {
+				check == true;
+				alert('Sao '+str+' nằm ở chòm sao '+constellation[i] )	
+				return check;			
+			}else{
+				check == false;
+				alert('Không có tên');
+				return check;
+			}
+		}
+	}
+
+</script>
+
+</body>
+</html>
